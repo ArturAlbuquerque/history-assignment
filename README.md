@@ -1,3 +1,3 @@
 # history-assignment
-Especific website created for my history class assignment at Colégio Marista Rosario.
-I wrote the code on codepen.io, go check it out! https://codepen.io/Artur2301/pen/abEPRpx
+Site especifico no qual desenvolvi com o objetivo de apresentar como meu trabalho de história no Colégio Marista Rosário.
+Eu escrevi o código no codepen.io, espero que gostem! https://codepen.io/Artur2301/pen/abEPRpx
