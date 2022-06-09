@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <title> Trabalho de História</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head> 
+  <body>
+    <script>
+      var selectedcontainer = ""
+      var selectedelement = null
+      var colorkeys = {"Estruturasocial": "es", "Curiosidades": "c", "Religião": "r", "Política": "p", "Origem": "o", "Economia": "e", "Fontesbibliográficas": "f"}
+      function rendercontent(contentid) {
+        console.log(selectedcontainer)
+        var container = document.getElementById(contentid)
+        if(typeof container !== "undefined") {
+          console.log(container)
+          if(selectedcontainer !== "") {
+            selectedelement.className = "content"
+          }   
+          selectedcontainer = contentid
+          selectedelement = container
+          container.className = `content show ${colorkeys[contentid]}` 
+        }
+      }
+    </script>
+    <div class="container">
+      <h1 class="page-title">
+      Maias</h1>
+      <p class="page-subtitle">
+      Conheça a civilização Maia e suas curiosidades!
+      </p>
+      <div>
+      <button class = "button es" type="submit" onclick="rendercontent('Estruturasocial')">Estrutura social</button>
+      <button class = "button c" type="submit" onclick="rendercontent('Curiosidades')">Curiosidades</button>
+      <button class = "button r" type="submit" onclick="rendercontent('Religião')">Religião</button>
+      <button class = "button p" type="submit" onclick="rendercontent('Política')">Política</button>
+      <button class = "button o" type="submit" onclick="rendercontent('Origem')">Origem</button>
+      <button class = "button e" type="submit" onclick="rendercontent('Economia')">Economia</button>
+      <button class = "button f" type="submit" onclick="rendercontent('Fontesbibliográficas')">Fontes bibliográficas</button>
+      </div>
+    <div class="containercontent">
+     <div class="content" id="Origem">
+      <div class = "column">
+         <p class = "contentparagraph">-A civilização maia se originou por volta dos anos 1500 a.C. até o século IX sendo a mais duradoura da América, porém seu auge foi entre os anos 250 d.C. e 900 d.C.</p>
+         <p class = "contentparagraph">- Os maias habitaram a região da Mesoamérica que é onde ficam atualmente o México, Guatemala, etc.</p>
+         <p class = "contentparagraph">-Os maias são conhecidos por seu conhecimento tecnológico muito à frente de seu tempo que, mesmo sendo um povo antigo, atingiu conhecimentos avançados nas áreas da matemática, arquitetura, astronomia, linguagem, etc.</p>
+    </div>
+         <img src = "https://www.coladaweb.com/wp-content/uploads/2014/12/20190512-maias.jpg"></img>
+     </div>
+    <div class="content" id="Economia"> 
+      <div class = "column">
+        <p class = "contentparagraph one">-A economia da civilização maia era mais focada na agricultura, com uma grande variedade de produtos e técnicas avançadas de produção.</p>
+        <p class = "contentparagraph one">-Dentre os principais produtos comercializados, podemos citar o algodão (para fins de artesanato têxtil), o cacau, o urucum, o milho, entre outros.</p>
+        <p class = "contentparagraph one">-A população maia tinha como um dos principais alimentos em sua dieta o milho, porém a culinária da sociedade era extremamente desenvolvida utilizando de temperos e especiarias como baunilha e pimenta. Além disso, alimentos como feijão, tomate, abóbora, entre outros, eram consumidos frequentemente.</p>
+        <p class = "contentparagraph one">-Outro forte ponto da economia maia era a caça, onde animais como antas, veados, coelhos e macacos eram os mais apreciados.</p>
+      </div>
+        <img src = "https://1.bp.blogspot.com/-7vHM9ZXUSjg/WCjd9KzQkGI/AAAAAAAAAGg/wjHnBvckTmICWrEnca_o0f852g75Xo0xQCLcB/s1600/45.jpg"></img>
+    </div>
+    <div class="content" id="Política">
+      <div class = "column">
+         <p class = "contentparagraph">-As cidades habitadas pelos maias possuíam uma organização política de cidades-estado, o que significa que cada cidade possuía autoridades próprias e fronteiras definidas pelos limites da mesma, ou seja, eram independentes.</p>
+         <p class = "contentparagraph">-Estas cidades independentes além de efetuar o comércio também acabavam guerreando entre si, geralmente, porque uma queria impor autoridade sobre outra. Dentre as cidades maias que conseguiram ter um domínio regional de maior destaque podemos citar Palenque, Tikal e Calakmul.</p>
+         <p class = "contentparagraph">-Ajaw era o nome da autoridade máxima dentro das comunidades e era visto pelos seus súditos como uma manifestação dos deuses. Os sacrifícios exerciam grande importância dentro da política pois aprisionar guerreiros renomados de cidades vizinhas para sacrificar era sinônimo de prestigio ao rei que os capturou.</p>
+    </div>
+         <img src = "https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2020/04/maias-organizacao-economia-e-politica-2.jpg"></img>
+    </div>
+    <div class="content" id="Religião">
+      <div class = "column">
+        <p class = "contentparagraph">-A religião era um dos senão o ponto mais forte da civilização Maia, pois todas as vertentes como economia, cultura, conhecimento, entre outros eram norteados por forças sobrenaturais.</p>
+        <p class = "contentparagraph">-Os maias possuíam vários Deuses, um específico para cada cidade, e acreditavam que eles viviam em um tipo de paraíso chamado Tamoanchan (este paraíso pertencia a diversas religiões dos povos da Mesoamérica). </p>
+        <p class = "contentparagraph">-Rituais de Sacrifício eram extremamente importantes dentro da religião dos maias, efetuados de forma violenta, com decapitações até mesmo a retirada do coração de uma pessoa viva. Tudo isso servia como forma de oferenda para os seus deuses e os sacrificados geralmente eram prisioneiros de guerra ou voluntários.</p>
+        </div>
+       <img src = "https://americamaia.files.wordpress.com/2017/04/maias-7.jpg?w=300&h=432" ></img>
+    </div> 
+     <div class="content" id="Curiosidades">
+        <div class = "column">
+          <p class = "contentparagraph">-Os maias foram os responsáveis por desenvolver a famosa goma de mascar (ou chiclete). Através da extração da resina de uma árvore de nome “zapote”, criaram uma goma denominada “tzicli” (derivando o nome chiclete) que era utilizada para mastigar com objetivo de limpar os dentes.</p>
+          <p class = "contentparagraph">-Curiosidades quanto a estética deste povo era que os dentes deles eram afiados e incrustados com pedras preciosas, pois era um sinal de beleza e também diferenciava os indivíduos de classes elevadas. Dentro da cultura maia era comum deformar o crânio dos bebês com placas de madeira propositalmente, durante suas primeiras semanas de vida, para ter cabeças alongadas.</p>
+          <p class = "contentparagraph">-O povo maia nunca foi extinguido por completo. Seus descendentes com cerca de 7 milhões de pessoas nas regiões da Guatemala, Honduras, Belize e península mexicana de Iucatã preservam sua língua (quiche) e alguns costumes. Costumes como roupas tradicionais, alimentos, rituais e o quiche é falada por 1,7 milhões de pessoas ainda.</p>
+     </div>
+          <img src = "https://static.todamateria.com.br/upload/56/b3/56b36a686dbe7-arte-maia.jpg?auto_optimize=low"></img>
+     </div>
+     <div class="content" id="Estruturasocial">  
+       <div class = "column"> 
+       <p class = "contentparagraph">-Possuía uma estrutura social estamental com divisões como:</p>
+       <p class = "contentparagraph">
+  -Imperadores, Sacerdotes e Líderes militares (classes mais importantes);</p>
+       <p class = "contentparagraph">
+  -Comerciantes e artesãos livres (no meio da pirâmide hierárquica);</p>
+       <p class = "contentparagraph">
+  -Camponeses e escravos (última classe e base da pirâmide hierárquica).</p>
+     </div>
+       <img src = "https://cdn.blog.estrategiavestibulares.com.br/vestibulares/wp-content/uploads/2021/07/image-2.png"> </img>
+</div>
+       <div class="content" id="Fontesbibliográficas">
+         <div class = "columns">
+            <p class = "contentparagraph">-https://brasilescola.uol.com.br/historia-da-america/maias-economia-sociedade.htm</p>
+            <p class = "contentparagraph">-https://www.historiadomundo.com.br/maia</p>
+            <p class = "contentparagraph">-https://studhistoria.com.br/historia-das-coisas/curiosidades-e-conhecimentos-dos-maias/</p>
+            <p class = "contentparagraph">-https://www.todamateria.com.br/maias/</p>
+            <p class = "contentparagraph">-https://educacao.uol.com.br/disciplinas/historia/maias-uma-historia-de-misterios-que-ainda-nao-acabou.htm</p>
+            <p class = "contentparagraph">-https://conhecimentocientifico.com/maias/</p>
+            <p class = "contentparagraph">-https://www.coladaweb.com/historia/astecas-incas-e-maias</p>   
+           </div>
+       </div>
+        </div>
+       </div>
+    </body>
+</html>
